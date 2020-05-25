@@ -1,3 +1,0 @@
-ja:
-  errors:
-    header: " %{model}の登録で  %{count}のエラーが発生しました"
