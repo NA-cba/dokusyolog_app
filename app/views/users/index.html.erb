@@ -11,4 +11,6 @@
   <%= render @users %>
 </ul>
 
-<%= will_paginate %>
+
+
+<%= will_paginate @users, :previous_label => ' < 前へ', :next_label => '次へ >' %>
