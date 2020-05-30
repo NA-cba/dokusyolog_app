@@ -18,6 +18,9 @@
       <%= f.label :password_confirmation, "確認のためパスワードを再入力してください" %>
       <%= f.password_field :password_confirmation, class: 'form-control' %>
 
+      <%= f.label :image %>
+      <%= f.file_field :image %>
+
       <%= f.submit "アカウントを作成する", class: "btn btn-primary" %>
     <% end %>
   </div>

@@ -5,6 +5,8 @@ class Micropost < ApplicationRecord
   validates :user_id, presence: true
   validates :content, presence: true, length: { maximum: 140 }
   validate  :picture_size
+  validates :picture,presence: true
+
 
   def self.search(search) #ここでのself.はMicropost.を意味する
     if search
@@ -13,9 +15,6 @@ class Micropost < ApplicationRecord
       all #全て表示。Micropost.は省略。
     end
   end
-
-
-
 
   private
 

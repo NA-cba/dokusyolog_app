@@ -1,18 +1,13 @@
 <%= form_for(@micropost) do |f| %>
   <%= render 'shared/error_messages', object: f.object %>
   <div class="field">
-
-    <%= f.text_area :content, placeholder: "読書した本の感想を記入してください" %>
+    <%= f.text_area :content, placeholder: "読書した本の感想を140文字以内で記入してください" %>
   </div>
-
   <p>読書した本の表紙画像を添付してください</p>
   <span class="picture">
     <%= f.file_field :picture, accept: 'image/jpeg,image/gif,image/png' %>
   </span>
-
-
-  <%= f.submit "投稿", class: "btn btn-primary" %>
-
+  <%= f.submit "投稿する", class: "btn btn-primary" %>
 <% end %>
 
 <script type="text/javascript">
