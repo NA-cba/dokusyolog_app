@@ -41,6 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   font-size: 3em;
   letter-spacing: -2px;
+  margin-top: 60px;
   margin-bottom: 30px;
   text-align: center;
 }
@@ -153,7 +154,7 @@ aside {
 
 input, textarea, select, .uneditable-input {
   border: 1px solid #bbb;
-  width: 100%;
+  width: 70%;
   margin-bottom: 15px;
   @include box_sizing;
 }
@@ -270,4 +271,10 @@ span.picture {
   text-align: center;
   background-image: image-url("<%= asset_path('pixta_37452608_M-1.jpg') %>");
   background-size: cover;
+}
+
+.user_info,.current_user_info{
+  h1{
+    margin-top: 50px;
+  }
 }

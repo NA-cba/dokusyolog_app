@@ -15,8 +15,8 @@
       <p><%= @user.name %>さんの感想記事の検索</p>
         <%= form_tag user_path, :method => 'get' do %>
         <p>
-          <%= text_field_tag :search, params[:search] , :size=>"10" %>
-          <%= submit_tag "検索する", :name => nil,class: "btn btn-lg btn-primary"  %>
+          <%= text_field_tag :search, params[:search]  %>
+          <%= submit_tag "検索する", :name=> nil, class: "btn btn-lg btn-primary"  %>
         </p>
         <h3><%= @user.name %>さんの感想記事一覧(<%= @user.microposts.count %>記事)</h3>
         <% end %>
