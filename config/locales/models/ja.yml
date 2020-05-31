@@ -207,8 +207,6 @@ ja:
     pm: 午後
 
   activerecord:
-
-
     #設定したいモデル名を指定
     models:
       user: ユーザー
@@ -225,7 +223,6 @@ ja:
       micropost:
         content: 本の感想
         picture: 本の画像
-
 
   shared:
     #フォルダ名の頭の「_」は取る

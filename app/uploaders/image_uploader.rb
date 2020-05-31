@@ -8,8 +8,6 @@ class ImageUploader < CarrierWave::Uploader::Base
   # 保存形式をJPGにする
   process :convert => 'jpg'
 
-
-
   # jpg,jpeg,gif,pngしか受け付けない
   def extension_white_list
     %w(jpg jpeg gif png)
@@ -31,5 +29,4 @@ class ImageUploader < CarrierWave::Uploader::Base
     var = :"@#{mounted_as}_secure_token"
     model.instance_variable_get(var) or model.instance_variable_set(var, SecureRandom.uuid)
   end
-
 end

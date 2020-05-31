@@ -2,12 +2,12 @@
   <nav>
     <ul>
       <% if logged_in? %>
-      <li><%= link_to "DokusyoLogとは？",   about_path %></li>
-      <li><%= link_to "投稿する", root_path %></li>
-      <li><%= link_to "全ての感想記事一覧", index_path %></li>
-      <li><%= link_to "ユーザー一覧", users_path %></li>
+        <li><%= link_to "DokusyoLogとは？",   about_path %></li>
+        <li><%= link_to "投稿する", root_path %></li>
+        <li><%= link_to "全ての感想記事一覧", index_path %></li>
+        <li><%= link_to "ユーザー一覧", users_path %></li>
       <% else %>
-      <li><%= link_to "DokusyoLogとは？",   about_path %></li>
+        <li><%= link_to "DokusyoLogとは？",   about_path %></li>
       <% end %>
     </ul>
   </nav>

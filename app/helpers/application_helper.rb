@@ -1,6 +1,6 @@
 module ApplicationHelper
 
-  # ページごとの完全なタイトルを返します。                   # コメント行
+  # ページごとの完全なタイトルを返します。                  
   def full_title(page_title = '')                     # メソッド定義とオプション引数
     base_title = "DokusyoLog"  # 変数への代入
     if page_title.empty?                              # 論理値テスト

@@ -3,7 +3,7 @@ class UsersController < ApplicationController
    before_action :correct_user,   only: [:edit, :update]
    before_action :admin_user,     only: :destroy
 
-   def index
+  def index
     @users = User.paginate(page: params[:page]).search(params[:search])
   end
 
@@ -47,19 +47,19 @@ class UsersController < ApplicationController
 
   private
 
-  def user_params
-    params.require(:user).permit(:name, :email, :password,
+    def user_params
+      params.require(:user).permit(:name, :email, :password,
                                  :password_confirmation, :image)
-  end
+    end
 
   # 正しいユーザーかどうか確認
-  def correct_user
-    @user = User.find(params[:id])
-    redirect_to(root_url) unless current_user?(@user)
-  end
+    def correct_user
+      @user = User.find(params[:id])
+      redirect_to(root_url) unless current_user?(@user)
+    end
 
-  # 管理者かどうか確認
-  def admin_user
-    redirect_to(root_url) unless current_user.admin?
-  end
+    # 管理者かどうか確認
+    def admin_user
+      redirect_to(root_url) unless current_user.admin?
+    end
 end

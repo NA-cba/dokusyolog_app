@@ -17,7 +17,7 @@
       </p>
       <% end %>
       <h3><%= current_user.name %>さんの感想記事一覧(<%= current_user.microposts.count %>記事)</h3>
-        <%= render 'shared/feed' %>
+      <%= render 'shared/feed' %>
     </div>
   </div>
 <% else %>
@@ -25,7 +25,6 @@
     <h1>DokusyoLog</h1>
     <h1>(ログイン画面にあるテスト用のEmailとパスワードでログインしてください)</h1>
     <h2>読書体験を豊かにするディスカバリーサービス</h2>
-
     <%= link_to "新規ユーザーとして登録する", signup_path, class: "btn btn-lg btn-primary" %>
   </div>
 <% end %>

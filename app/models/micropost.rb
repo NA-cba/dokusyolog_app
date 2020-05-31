@@ -7,7 +7,6 @@ class Micropost < ApplicationRecord
   validate  :picture_size
   validates :picture,presence: true
 
-
   def self.search(search) #ここでのself.はMicropost.を意味する
     if search
       where(['content LIKE ?', "%#{search}%"]) #検索とcontentの部分一致を表示。Micropost.は省略。

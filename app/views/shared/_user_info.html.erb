@@ -1,6 +1,4 @@
 <div class="current_user_info">
-
-
 <h1>
   <% if current_user.image? %>
     <%= image_tag current_user.image.url %>
@@ -8,5 +6,4 @@
   <%= current_user.name %>
 </h1>
 <span><%= pluralize(current_user.microposts.count, "記事の投稿") %></span>
-
 </div>

@@ -1,5 +1,4 @@
 class User < ApplicationRecord
-
   mount_uploader :image, ImageUploader
   has_many :microposts, dependent: :destroy
   attr_accessor :remember_token
