@@ -5,6 +5,4 @@ class UsersProfileTest < ActionDispatch::IntegrationTest
   #   assert true
   # end
   include ApplicationHelper
-
-  
 end
