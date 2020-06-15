@@ -18,8 +18,7 @@
 
 ## 使用技術
 
-言語/フレームワーク
-Ruby 2.6.4/Ruby on Rails 5.1.6
+Ruby,Ruby on Rails,Bootstrap,Sass,JavaScript,CoffeScript,SQLite
 
 ## 使い方
 
