@@ -48,3 +48,19 @@ $ rails server
 ```
 
 ログイン画面にあるテスト用のメールアドレスとパスワードでログインして使用してください。
+
+## デモ
+
+![デモ](https://user-images.githubusercontent.com/60135638/93008942-eb130780-f5b5-11ea-9107-9674017a0429.png)
+
+![デモ](https://user-images.githubusercontent.com/60135638/93008971-36c5b100-f5b6-11ea-8a97-3d15f7a22a96.png)
+
+![デモ](https://user-images.githubusercontent.com/60135638/93008974-3b8a6500-f5b6-11ea-9d80-5da159e9496d.png)
+
+![デモ](https://user-images.githubusercontent.com/60135638/93008981-47762700-f5b6-11ea-880c-0cf3bdafc77e.png)
+
+![デモ](https://user-images.githubusercontent.com/60135638/93008985-4a711780-f5b6-11ea-9708-ddf1b2998384.png)
+
+![デモ](https://user-images.githubusercontent.com/60135638/93008987-4c3adb00-f5b6-11ea-9b8d-83601ed9af4c.png)
+
+![デモ](https://user-images.githubusercontent.com/60135638/93008990-4e9d3500-f5b6-11ea-9fb4-1f74c61963ab.png)
